@@ -1,3 +1,4 @@
+import Background from '@/components/Background'
 import { roboto300 } from '@/fonts'
 import '@/styles/globals.css'
 
@@ -12,7 +13,10 @@ export default function RootLayout({ children }) {
       <head>
         <link rel="icon" href="/img/favicon.ico" sizes="any" />
       </head>
-      <body className={roboto300.className}>{children}</body>
+      <body className={roboto300.className}>
+        <Background />
+        {children}
+      </body>
     </html>
   )
 }
