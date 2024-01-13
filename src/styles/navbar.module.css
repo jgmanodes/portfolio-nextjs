@@ -7,16 +7,6 @@
   display: flex;
   justify-content: space-around;
   align-items: center;
-
-  background: rgb(64, 61, 57);
-  background: linear-gradient(
-    0deg,
-    rgba(64, 61, 57, 0) 0%,
-    rgba(37, 36, 34, 0.1) 10%,
-    rgba(37, 36, 34, 0.6) 40%,
-    rgba(37, 36, 34, 0.9) 60%,
-    rgba(37, 36, 34, 1) 100%
-  );
 }
 
 .logo {

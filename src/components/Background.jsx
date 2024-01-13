@@ -6,8 +6,8 @@ function Background() {
     <div className={styles.container}>
         <div></div>
         <div></div>
-        <div></div>
-        <div></div>
+        {/* <div></div>
+        <div></div> */}
     </div>
   )
 }
