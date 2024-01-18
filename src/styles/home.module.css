@@ -51,8 +51,6 @@
     }
 }
 
-
-
 @media (max-width: 768px) {
     .container {
         width: 90%;
@@ -78,13 +76,16 @@
     }
 }
 
-
 @media (max-width: 430px) {
     .container {
         width: 100%;
     }
     .container .text {
         width: 200px;
+    }
+    .container .text h1 {
+        font-size: 54px;
+        line-height: 48px;
     }
     .container .image {
         width: 300px;

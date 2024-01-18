@@ -1,33 +1,32 @@
 .navbar {
   position: fixed;
   top: 0;
-  width: 100%;
+  width: 80%;
   height: 150px;
   padding-bottom: 60px;
   display: flex;
-  justify-content: space-around;
+  justify-content: space-between;
   align-items: center;
+  transition: all 0.3s ease-in-out;
 }
-
 .logo {
-  width: 500px;
+  min-width: 300px;
+  width: 30%;
   display: flex;
   justify-content: center;
 }
 .logo button {
-  background: none;
-  border: none;
-  font-size: 2rem;
+  font-size: 26px;
   text-transform: uppercase;
   transition: all 0.3s ease-in-out;
 }
 .logo button:hover {
   letter-spacing: 2px;
-  color: rgb(var(--flame-red-rgb));
+  color: var(--flame);
 }
-
 .navigation {
-    min-width: 600px;
+    min-width: 500px;
+    width: 45%;
     display: flex;
     justify-content: space-around;
     font-size: 1.2rem;
@@ -36,14 +35,27 @@
     width: 25%;
     display: flex;
     justify-content: center;
-    font-size: 1.125rem;
+    font-size: 16px;
     text-transform: uppercase;
     transition: all 0.3s ease-in-out;
 }
 .navigation button:hover {
-  color: rgb(var(--flame-red-rgb));
-  border: none;
-  letter-spacing: 2px;
-  text-transform: uppercase;
-  transition: all 0.3s ease-in-out;
+  color: var(--flame);
+  letter-spacing: 1px;
+}
+.responsiveNavigation {
+  display: none;
+}
+@media (max-width: 1200px) {
+  .navbar {
+    width: 90%;
+  }
+}
+@media (max-width: 1024px) {
+  .navigation {
+    display: none;
+  }
+  .responsiveNavigation {
+    display: flex;
+  }
 }

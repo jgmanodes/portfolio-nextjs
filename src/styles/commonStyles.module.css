@@ -7,9 +7,15 @@
     align-items: center;
 }
 .section h2 {
-    height: 100px;
-    display: flex;
+    height: 20%;
+    display: none;
     align-items: flex-end;
-    font-size: 42px;
+    font-size: 28px;
     text-shadow: 0 1px 8px #ffffff50;
+}
+
+@media (max-width: 1024px) {
+    .section h2 {
+        display: flex;
+    }
 }
