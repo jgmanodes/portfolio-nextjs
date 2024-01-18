@@ -51,11 +51,17 @@
     width: 90%;
   }
 }
-@media (max-width: 1024px) {
-  .navigation {
+@media (max-width: 1023px) {
+
+  /* Only for test */
+  .logo {
     display: none;
   }
-  .responsiveNavigation {
+
+  .navigation {
     display: flex;
+  }
+  .responsiveNavigation {
+    display: none;
   }
 }

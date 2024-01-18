@@ -1,19 +1,19 @@
 import commonStyles from '@/styles/commonStyles.module.css'
 import styles from '@/styles/about.module.css'
-import { roboto300, redHat300 } from '@/fonts'
+import { roboto400, redHat400 } from '@/fonts'
 
 function About() {
   return (
     <div id="about" className={commonStyles.section}>
-      <h2 className={redHat300.className}>Acerca de mi</h2>
+      <h2 className={redHat400.className}>Acerca de mi</h2>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
           Imagen
         </div>
         <div className={styles.textContainer}>
-          <p className={roboto300.className}>Tengo 28 años, soy de Santiago de Chile 🇨🇱. Llevo 5 años siendo padre y 2 años como desarrollador. Me gusta el cine, la música y el arte. Me apasiona la ciencia y la tecnología.</p>
-          <p className={roboto300.className}>Hace 3 años me dediqué a explorar otras ramas por mi cuenta, viendo tutoriales y completando cursos adquirí habilidades en el modelado 3D y programación web. En Septiembre del 2023 obtuve un certificado como Desarrollador Full Stack por Generation Chile.</p>
-          <p className={roboto300.className}>Con mi conocimiento y experiencia, estoy capacitado para diseñar y desarrollar páginas web y aplicaciones utilizando varios lenguajes y frameworks. Mi enfoque se centra en la utilización de las mejores prácticas y estándares de la industria, garantizando de esta manera la calidad y eficiencia en cada proyecto.</p>
+          <p className={roboto400.className}>Tengo 28 años, soy de Santiago de Chile 🇨🇱. Llevo 5 años siendo padre y 2 años como desarrollador. Me gusta el cine, la música y el arte. Me apasiona la ciencia y la tecnología.</p>
+          <p className={roboto400.className}>Hace 3 años me dediqué a explorar otras ramas por mi cuenta, viendo tutoriales y completando cursos adquirí habilidades en el modelado 3D y programación web. En Septiembre del 2023 obtuve un certificado como Desarrollador Full Stack por Generation Chile.</p>
+          <p className={roboto400.className}>Con mi conocimiento y experiencia, estoy capacitado para diseñar y desarrollar páginas web y aplicaciones utilizando varios lenguajes y frameworks. Mi enfoque se centra en la utilización de las mejores prácticas y estándares de la industria, garantizando de esta manera la calidad y eficiencia en cada proyecto.</p>
         </div>
       </div>
     </div>
