@@ -1,10 +1,6 @@
 import commonStyles from '@/styles/commonStyles.module.css';
-import styles from '@/styles/home.module.css';
-import { Red_Hat_Display } from 'next/font/google';
-
-
-const redHat500 = Red_Hat_Display({ subsets: ['latin'], weight: '500' });
-const redHat300 = Red_Hat_Display({ subsets: ['latin'], weight: '300' });
+import styles from './home.module.css';
+import { redHat300, redHat500 } from '@/fonts';
 
 function Home() {
     return (

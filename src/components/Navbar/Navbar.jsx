@@ -1,8 +1,6 @@
 'use client';
 
-import styles from '@/styles/navbar.module.css';
-import Link from 'next/link';
-import { Red_Hat_Display } from 'next/font/google';
+import styles from './navbar.module.css';
 import { redHat400, redHat700 } from '@/fonts';
 
 function Navbar() {

@@ -1,5 +1,5 @@
 import commonStyles from '@/styles/commonStyles.module.css'
-import styles from '@/styles/about.module.css'
+import styles from './about.module.css'
 import { roboto400, redHat400 } from '@/fonts'
 
 function About() {

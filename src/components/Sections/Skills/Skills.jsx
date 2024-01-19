@@ -1,6 +1,6 @@
 import commonStyles from '@/styles/commonStyles.module.css'
 import { redHat300 } from '@/fonts'
-import styles from '@/styles/skills.module.css'
+import styles from './skills.module.css'
 import Link from 'next/link'
 
 // react-icons

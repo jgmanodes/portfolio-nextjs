@@ -1,4 +1,4 @@
-import Background from '@/components/Background'
+import Background from '@/components/Background/Background'
 import { roboto300 } from '@/fonts'
 import '@/styles/globals.css'
 

@@ -1,5 +1,5 @@
 import commonStyles from '@/styles/commonStyles.module.css'
-import styles from '@/styles/projects.module.css'
+import styles from './projects.module.css'
 import { redHat300, roboto300 } from '@/fonts'
 import Image from 'next/image'
 

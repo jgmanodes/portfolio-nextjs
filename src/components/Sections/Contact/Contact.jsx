@@ -1,7 +1,7 @@
 import Link from 'next/link'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import commonStyles from '@/styles/commonStyles.module.css'
-import styles from '@/styles/contact.module.css'
+import styles from './contact.module.css'
 import { redHat300, roboto300, roboto400 } from '@/fonts'
 
 function Contact() {
