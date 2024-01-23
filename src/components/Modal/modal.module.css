@@ -1,0 +1,185 @@
+.modalOverlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 999;
+  animation: fadeIn 0.5s ease-in-out forwards;
+}
+.modalContent {
+  width: 90%;
+  height: 55%;
+  max-height: 450px;
+  background-color: var(--timberwolf);
+  border-radius: 12px;
+  box-shadow: 0 0 12px #00000050;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  overflow: hidden;
+}
+.closeButton {
+  position: relative;
+  top: 6px;
+  right: calc(-50% + 24px);
+  width: 30px;
+  height: 30px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 22px;
+  color: var(--flame);
+  cursor: pointer;
+  z-index: 999;
+}
+.titulo {
+  position: relative;
+  top: -24px;
+  width: 100%;
+  height: 4%;
+  font-size: 22px;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  text-align: center;
+}
+.content {
+  position: relative;
+  top: -8px;
+  width: 100%;
+  height: 90%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-evenly;
+}
+.content p {
+  width: 95%;
+  height: 60%;
+  font-size: 14px;
+  line-height: 22px;
+}
+.content .stackUsed {
+  position: relative;
+  width: 90%;
+  height: 18%;
+  margin-bottom: 16px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+  align-items: center;
+}
+.content .stackUsed p {
+  width: 100%;
+  height: 40%;
+  font-size: 12px;
+  text-transform: uppercase;
+  text-align: center;
+}
+.content .stackUsed span {
+  width: 13%;
+  height: 70%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.content .stackUsed span svg {
+  width: 100%;
+  height: 100%;
+  color: var(--jet);
+}
+.content .stackUsed span svg:hover {
+  height: 100%;
+  width: 100%;
+}
+.content a {
+  width: 90%;
+  height: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: flex-end;
+  font-size: 18px;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+  color: var(--flame);
+}
+
+@media (max-height: 700px) {
+  .modalContent {
+      height: 90%;
+  }
+}
+
+@media (min-width: 767px) {
+  .modalContent {
+    width: 60%;
+    max-width: 450px;
+    max-height: 500px;
+  }
+  .titulo {
+    font-size: 24px;
+    top: -26px;
+  }
+  .content {
+    top: 0;
+  }
+  .content p {
+    height: 50%;
+    font-size: 16px;
+    line-height: 24px;
+  }
+  .content .stackUsed {
+    height: 20%;
+  }
+  .content .stackUsed p {
+    font-size: 14px;
+  }
+  .content a {
+    align-items: center;
+  }
+}
+
+@media (min-width: 1023px) {
+  .modalContent {
+    max-width: 700px;
+    max-height: 400px;
+  }
+  .content .stackUsed {
+    height: 30%;
+    margin: 0 3rem;
+  }
+  .content .stackUsed p {
+    height: 10%;
+  }
+  .content .stackUsed span {
+    width: 20%;
+  }
+}
+
+
+.fadeOut {
+    animation: fadeOut 0.5s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  0% {
+    opacity: 0%;
+  }
+  100% {
+    opacity: 100%;
+  }
+}
+
+@keyframes fadeOut {
+  0% {
+    opacity: 100%;
+  }
+  100% {
+    opacity: 0%;
+  }
+}

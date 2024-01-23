@@ -1,13 +1,19 @@
 .container {
     width: 85%;
     height: 85%;
+    padding-top: 25px;
     display: flex;
     flex-direction: column;
     align-items: center;
 }
 .container p {
     height: 10%;
+    margin-bottom: 25px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 14px;
+    line-height: 18px;
     text-align: center;
 }
 .container .cardsContainer {
@@ -22,57 +28,108 @@
     height: 30%;
     background-color: var(--eerie-black);
     border-radius: 12px;
+    box-shadow: 0 0 8px #00000050;
     cursor: pointer;
     overflow: hidden;
 }
-
-
-
-
-
-
-
-
-
-/* .container .cardsContainer .card img {
-    width: 100%;
-    border-radius: 12px;
-    transition: all 0.3s ease-in-out;
-}
-
-.container .cardsContainer .card img:hover {
-    filter: brightness(0.5);
-    transform: scale(1.2);
-} */
-
-
-
-.container .cardsContainer .card p {
-    display: none;
+.container .cardsContainer .card .cardImg {
     width: 100%;
     height: 100%;
+    object-fit: cover;
+    filter: brightness(40%);
 }
-.container .cardsContainer .card p:hover {
-    display: block;
+.container .cardsContainer .card .cardTitle {
+    position: relative;
+    top: -100%;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 26px;
+    color: var(--timberwolf);
+    text-shadow: 0 0 2px var(--flame);
+    text-transform: uppercase;
+    letter-spacing: 2px;
 }
-/* Hacer un carousel para mostrar el proyecto y hacer click para ver más */
 
-/* 
-@media (max-width: 1200px) {
-    .container {
-        flex-direction: column;
-        justify-content: space-around;
+/* corte en 500px ? */
+/* corte en 767px */
+@media (min-width: 767px) {
+    .container p {
+        width: 80%;
+        font-size: 16px;
+        line-height: 24px;
+    }
+    .container .cardsContainer {
+        width: 80%;
         height: 70%;
-        width: 90%;
     }
-    .container .card {
+    .container .cardsContainer .card .cardTitle {
+        font-size: 30px;
+    }
+}
+
+/* corte en 1024px */
+@media (min-width: 1023px) {
+    .container {
+        width: 70%;
+        padding-top: 0;
+    }
+    .container p {
+        height: 20%;
+        max-width: 620px;
+    }
+    .container .cardsContainer {
         width: 100%;
-        height: 32%;
-        margin: 4px 0;
+        height: 70%;
+        display: grid;
+        grid-auto-flow: row dense;
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+        grid-gap: 16px;
+        grid-template-areas:
+            "a b"
+            "a b"
+            "c c";
     }
-    .container .card:hover {
+    .container .cardsContainer .card {
         width: 100%;
-        height: 60%;
+        height: 100%;
     }
-} */
-/* 79 lines of code */
+    .container .cardsContainer .card:nth-child(1) {
+        grid-area: a;
+    }
+    .container .cardsContainer .card:nth-child(2) {
+        grid-area: b;
+    }
+    .container .cardsContainer .card:nth-child(3) {
+        grid-area: c;
+    }
+}
+
+/* corte en 1280px */
+@media (min-width: 1279px) {
+    .container p {
+        width: 100%;
+        max-width: 800px;
+        font-size: 18px;
+        margin: 0;
+        align-items: center;
+    }
+}
+
+@media (min-width: 1439px) {
+    .container {
+        max-width: 1200px;
+        max-height: 1024px;
+    } 
+    .container p {
+        width: 70%;
+        font-size: 20px;
+    }
+    .container .cardsContainer {
+        grid-gap: 28px;
+    }
+}
