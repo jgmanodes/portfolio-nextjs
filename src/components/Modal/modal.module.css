@@ -146,21 +146,51 @@
 
 @media (min-width: 1023px) {
   .modalContent {
+    height: 100%;
     max-width: 700px;
-    max-height: 400px;
+    max-height: 420px;
+  }
+  .content p {
+    height: 35%;
+    margin-bottom: 12px;
   }
   .content .stackUsed {
-    height: 30%;
-    margin: 0 3rem;
+    width: 65%;
+    height: 28%;
+    justify-content: center;
+    margin: 0;
   }
   .content .stackUsed p {
-    height: 10%;
+    height: 20%;
+    margin: 0;
   }
   .content .stackUsed span {
     width: 20%;
+    height: 60%;
+    padding: 0 0.5rem;
+  }
+  .content a {
+    width: 40%;
+    height: 20%;
+    font-size: 22px;
   }
 }
 
+@media (min-width: 1279px) {
+  .modalContent {
+    max-height: 500px;
+  }
+  .titulo {
+    font-size: 28px;
+    top: -30px;
+  }
+  .content p {
+    height: 45%;
+    font-size: 18px;
+    line-height: 28px;
+    margin: 0;
+  }
+}
 
 .fadeOut {
     animation: fadeOut 0.5s ease-in-out forwards;
