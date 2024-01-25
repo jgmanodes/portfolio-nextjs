@@ -18,8 +18,8 @@ function Navbar() {
                 <button onClick={() => scrollToSection('home')} className={redHat700.className}>Jorge Gonzalez</button>
             </div>
             <div className={styles.navigation}>
-                <button onClick={() => scrollToSection('about')} className={redHat400.className}>Acerca de mi</button>
-                <button onClick={() => scrollToSection('projects')} className={redHat400.className}>Proyectos</button>
+                {/* <button onClick={() => scrollToSection('about')} className={redHat400.className}>Acerca de mi</button> */}
+                {/* <button onClick={() => scrollToSection('projects')} className={redHat400.className}>Proyectos</button> */}
                 <button onClick={() => scrollToSection('skills')} className={redHat400.className}>Habilidades</button>
                 <button onClick={() => scrollToSection('contact')} className={redHat400.className}>Contacto</button>  
             </div>

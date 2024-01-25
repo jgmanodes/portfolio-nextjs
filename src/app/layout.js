@@ -14,7 +14,7 @@ export default function RootLayout({ children }) {
         <link rel="icon" href="/img/favicon.ico" sizes="any" />
       </head>
       <body className={roboto300.className}>
-        <Background />
+        {/* <Background /> */}
         {children}
       </body>
     </html>

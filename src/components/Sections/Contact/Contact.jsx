@@ -2,14 +2,17 @@ import Link from 'next/link'
 import { SiGithub, SiLinkedin } from 'react-icons/si'
 import commonStyles from '@/styles/commonStyles.module.css'
 import styles from './contact.module.css'
-import { redHat300, roboto300, roboto400 } from '@/fonts'
+import { redHat300, redHat500, roboto300, roboto400 } from '@/fonts'
 
 function Contact() {
   return (
     <div id="contact" className={commonStyles.section}>
+      <h2 className={redHat500.className}>Contacto</h2>
       <div className={styles.container}>
+
+        {/* Display: none < 767px */}
         <div className={styles.textContent}>
-          <h2 className={redHat300.className}>Mantente en contacto</h2>
+          <h3 className={redHat300.className}>Mantente en contacto</h3>
           <div className={styles.text}>
             <p className={roboto300.className}>¿Tienes algún proyecto en donde mis habilidades y experiencias te ayuden?</p>
             <p className={roboto400.className}>¡No dudes en contactarme! Estaré encantado de trabajar contigo 👋</p>
@@ -17,6 +20,7 @@ function Contact() {
         </div>
 
         <div className={styles.formContainer}>
+          <p className={roboto300.className}>Completa el formulario y me pondré en contacto contigo</p>
           <form
             action="https://formsubmit.co/db471c14615df20e46802d15a9270bc6"
             method="POST"

@@ -54,7 +54,6 @@
     letter-spacing: 2px;
 }
 
-/* corte en 500px ? */
 /* corte en 767px */
 @media (min-width: 767px) {
     .container p {
