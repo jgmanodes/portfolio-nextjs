@@ -1,7 +1,7 @@
 'use client';
 
 import styles from './navbar.module.css';
-import { redHat400, redHat700 } from '@/fonts';
+import { redHat300, redHat400, redHat700 } from '@/fonts';
 import { FiMenu } from 'react-icons/fi';
 
 function Navbar() {
