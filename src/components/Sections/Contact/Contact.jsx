@@ -27,16 +27,16 @@ function Contact() {
             className={styles.form}
           >
             <label htmlFor="name"> Nombre</label>
-            <input type="text" name="name" id="name" autoComplete="name" required />
+            <input type="text" name="name" id="name" autoComplete="name" required placeholder='Ej. Juan Perez' />
             
             <label htmlFor="email">Email</label>
-            <input type="email" name="email" id="email" autoComplete="email" required />
+            <input type="email" name="email" id="email" autoComplete="email" required placeholder='Ej. 0zqFP@example.com'/>
             
             <label htmlFor="subject">Asunto</label>
-            <input type="text" name="subject" id="subject" autoComplete="off" required />
+            <input type="text" name="subject" id="subject" autoComplete="off" required placeholder='Ej. Trabajo'/>
             
             <label htmlFor="message">Mensaje</label>
-            <textarea name="message" id="message" cols="15" rows="5" autoComplete="off" required />
+            <textarea name="message" id="message" cols="15" rows="5" autoComplete="off" required placeholder='Ej. Trabajo...'/>
 
             <input type="hidden" name="_next" id="next-page" autoComplete="off" value="http://www.google.com/" />
             <input type="hidden" name="_captcha" id="no-captcha" autoComplete="off" value="false" />

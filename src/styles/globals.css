@@ -1,16 +1,20 @@
 :root {
-  --background: #D4CFC4;
-  --font-color: #1f1f1f;
+  --background: #FFF8EB;
+  --contact-input: #FFF8EB;
+  --nav-font: #222222;
+  --font-color: #222222;
+  --nav-responsive-background: #e29300e6;
+  --nav-background: #e29300e6;
+  --contact-card: #e29300;
+  --modal: #FFE2AD;
+  --link: #E96235;
+  --icons-hov: #CFA418;
+  --icons: #29290e;
+  --contact-input-placeholder: #777777;
+  --contact-button: #8f5d00;
 
-  --floral-white: #fffcf2;
-  --timberwolf: #ccc5b9;
-  --khaki: #A99E89;
-  --black-olive: #403d39;
-  --jet: #2e2c29;
-  --eerie-black: #252422;
-  --night: #0A0A0A;
-  --flame: #eb5e28;
-  --burnt-sienna: #EE7444;
+  --gradient-left: #ffee99a7;
+  --gradient-right: #ed7f5ab6;
 }
 
 @media (prefers-color-scheme: dark) {

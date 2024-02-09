@@ -18,7 +18,7 @@
   height: 80%;
   min-height: 500px;
   padding: 1.5rem;
-  background-color: var(--khaki);
+  background-color: var(--contact-card);
   border-radius: 12px;
   box-shadow: 0 2px 4px #00000029;
   display: flex;
@@ -51,13 +51,26 @@
 .container .formContainer .form input,
 .container .formContainer .form textarea {
   width: 100%;
-  padding: 0 0.5rem;
+  padding: 0.1rem 0.5rem;
   margin-bottom: 6px;
   border: none;
   border-radius: 4px;
-  background-color: var(--floral-white);
+  background-color: var(--contact-input);
   box-shadow: inset 0 0 4px #00000025;
+  font-family: sans-serif;
 }
+
+.container .formContainer .form input:focus,
+.container .formContainer .form textarea:focus {
+  outline: none;
+}
+
+.container .formContainer .form input::placeholder,
+.container .formContainer .form textarea::placeholder {
+  color: var(--contact-input-placeholder);
+}
+
+
 .container .formContainer .form input {
   height: 28px;
 }
@@ -68,14 +81,13 @@
 .container .formContainer .form button {
   width: 150px;
   height: 40px;
-  background-color: var(--jet);
-  box-shadow: 0 0 6px #00000050;
+  background-color: var(--contact-button);
   border-radius: 16px;
   font-size: 14px;
   text-transform: uppercase;
   letter-spacing: 1px;
   cursor: pointer;
-  color: var(--floral-white);
+  color: var(--background);
 }
 .container .formContainer .socials {
   width: 100%;
@@ -105,7 +117,7 @@
 .container .formContainer .socials .socialIcons a svg {
   width: 32px;
   height: 32px;
-  color: var(--jet);
+  color: var(--icons);
 }
 .container .formContainer a {
   width: 100%;
@@ -116,6 +128,7 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  color: var(--font-color);
 }
 
 
@@ -183,12 +196,51 @@
   }
   .container .formContainer {
     max-width: 380px;
-    min-height: 420px;
-    padding: 2rem;
+    min-height: 450px;
+    padding: 1.5rem 2rem;
+  }
+  .container .formContainer .form {
+    height: 70%;
+    margin-bottom: 0.15rem;
+  }
+  .container .formContainer .socials {
+    height: 20%;
+    margin-bottom: 0.75rem;
   }
   .container .formContainer .socials p {
     height: 40%;
     font-size: 14px;
+  }
+  .container .formContainer .form button {
+    transition: all 0.3s ease;
+  }
+  .container .formContainer .form button:hover {
+    background-color: var(--link);
+    box-shadow: inset 0 0 12px 12px var(--contact-button);
+  }
+  .container .formContainer .form button:focus {
+    background-color: var(--contact-button);
+    box-shadow: none;
+    color: var(--font-color)
+  }
+  .container .formContainer .socials .socialIcons a svg {
+    width: 32px;
+    height: 32px;
+    transition: all 150ms ease;
+  }
+  .container .formContainer .socials .socialIcons a svg:hover {
+    width: 38px;
+    height: 38px;
+    color: var(--modal);
+  }
+  .container .formContainer a {
+    height: 5%;
+    letter-spacing: 1px;
+    transition: all 150ms ease;
+  }
+  .container .formContainer a:hover {
+    letter-spacing: 2px;
+    color: var(--modal);
   }
 }
 
@@ -203,6 +255,7 @@
     font-size: 20px;
   }
   .container .formContainer {
+    max-width: 500px;
     min-height: 475px;
   }
 }

@@ -26,7 +26,6 @@
 .container .cardsContainer .card {
     width: 100%;
     height: 30%;
-    background-color: var(--eerie-black);
     border-radius: 12px;
     box-shadow: 0 0 8px #00000050;
     cursor: pointer;
@@ -36,7 +35,7 @@
     width: 100%;
     height: 100%;
     object-fit: cover;
-    filter: brightness(40%);
+    filter: brightness(60%);
 }
 .container .cardsContainer .card .cardTitle {
     position: relative;
@@ -48,8 +47,8 @@
     justify-content: center;
     align-items: center;
     font-size: 26px;
-    color: var(--timberwolf);
-    text-shadow: 0 0 2px var(--flame);
+    color: var(--background);
+    text-shadow: 0 0 2px var(--icons-hov);
     text-transform: uppercase;
     letter-spacing: 2px;
 }

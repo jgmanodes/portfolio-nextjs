@@ -15,7 +15,7 @@
   width: 90%;
   height: 55%;
   max-height: 450px;
-  background-color: var(--timberwolf);
+  background-color: var(--modal);
   border-radius: 12px;
   box-shadow: 0 0 12px #00000050;
   padding: 1rem;
@@ -34,7 +34,7 @@
   justify-content: center;
   align-items: center;
   font-size: 22px;
-  color: var(--flame);
+  color: var(--link);
   cursor: pointer;
   z-index: 999;
 }
@@ -91,11 +91,7 @@
 .content .stackUsed span svg {
   width: 100%;
   height: 100%;
-  color: var(--jet);
-}
-.content .stackUsed span svg:hover {
-  height: 100%;
-  width: 100%;
+  color: var(--icons);
 }
 .content a {
   width: 90%;
@@ -106,7 +102,8 @@
   font-size: 18px;
   text-transform: uppercase;
   letter-spacing: 1px;
-  color: var(--flame);
+  color: var(--link);
+  transition: all 0.3s ease-in-out;
 }
 
 @media (max-height: 700px) {
@@ -150,6 +147,13 @@
     max-width: 700px;
     max-height: 420px;
   }
+  .closeButton {
+    font-size: 24px;
+    transition: all 150ms ease-in-out;
+  }
+  .closeButton:hover {
+    font-size: 32px;
+  }
   .content p {
     height: 35%;
     margin-bottom: 12px;
@@ -169,10 +173,23 @@
     height: 60%;
     padding: 0 0.5rem;
   }
+  .content .stackUsed span svg {
+    width: 90%;
+    height: 90%;
+    transition: all 150ms ease-in-out;
+  }
+  .content .stackUsed span svg:hover {
+    width: 100%;
+    height: 100%;
+    color: var(--icons-hov);
+  }
   .content a {
     width: 40%;
     height: 20%;
     font-size: 22px;
+  }
+  .content a:hover {
+    letter-spacing: 4px;
   }
 }
 

@@ -9,27 +9,33 @@
 .container div {
     position: absolute;
     border-radius: 50%;
-    animation: gradient 4s infinite;
 }
-@keyframes gradient {
+@keyframes gradient-left {
     70% {
-        transform: scale(1.2) translate(50px);
+        transform: scale(2) translate(50px);
+    }
+}
+@keyframes gradient-right {
+    70% {
+        transform: scale(1.5) translate(-50px);
     }
 }
 .container div:nth-child(1){
-    height: 70%;
-    width: 80%;
-    background-color: #87000096;
-    left: -29%;
+    height: 50%;
+    width: 50%;
+    background-color: var(--gradient-left);
+    left: -10%;
     top: -10%;
+    animation: gradient-left 4s ease-in-out infinite;
 }
 .container div:nth-child(2){
-    height: 65%;
-    width: 80%;
-    right: -20%;
-    bottom: 0;
-    background-color: #1c1c5494;
-    animation-delay: 0.3s;
+    height: 50%;
+    width: 50%;
+    right: -10%;
+    bottom: -10%;
+    background-color: var(--gradient-right);
+    animation: gradient-right 4s ease-in-out infinite;
+    animation-delay: 2s;
 }
 .container::after {
     content: "";
@@ -38,6 +44,8 @@
     width: 100%;
     backdrop-filter: blur(80px);
 }
+
+
 @media (prefers-color-scheme: dark) {
     .container div:nth-child(1){
         background-color: #220000;

@@ -2,7 +2,7 @@
 
 import commonStyles from '@/styles/commonStyles.module.css'
 import styles from './projects.module.css'
-import { redHat400, redHat500, roboto300 } from '@/fonts'
+import { redHat500, roboto300 } from '@/fonts'
 import Image from 'next/image'
 import Modal from '@/components/Modal/Modal'
 import { useState } from 'react'
@@ -70,7 +70,7 @@ function Projects() {
           {projectsData.map((project, index) => (
               <div className={styles.card} key={index} onClick={() => openModal(project)}>
                 <Image className={styles.cardImg} src={`/img/${project.title.toLowerCase()}-page.png`} alt={`Imagen de web: ${project.title}`} width={300} height={300}/>
-                <h4 className={`${styles.cardTitle} ${redHat400.className}`}>{project.title}</h4>
+                <h4 className={`${styles.cardTitle} ${redHat500.className}`}>{project.title}</h4>
               </div>
           ))}
         </div>
