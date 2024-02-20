@@ -10,12 +10,11 @@ function Navbar() {
 
         if (element) {
             element.scrollIntoView({ behavior: 'smooth' });
-            toggleMenu();
+            toggleMenu(sectionId);
         }
     }
 
-
-    const toggleMenu = () => {
+    const toggleMenu = (element) => {
         const menu = document.querySelector(`.${styles.responsiveMenu}`);
         const isOpen = menu.style.transform === 'scaleY(1)';
         menu.style.transform = isOpen ? 'scaleY(0)' : 'scaleY(1)';
@@ -24,8 +23,8 @@ function Navbar() {
     return (
         <header className={styles.navbar}>
             <div className={styles.logo}>
-                <button onClick={() => scrollToSection('home')}>
-                    <span className={redHat500.className}>Jorge</span>
+                <button id="homeButton" onClick={() => scrollToSection('home')}>
+                    <span className={redHat300.className}>Jorge</span>
                     <span className={redHat700.className}>González</span>
                 </button>
             </div>

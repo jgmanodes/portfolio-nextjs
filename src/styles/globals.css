@@ -1,15 +1,16 @@
 :root {
   --background: #FFF8EB;
-  --contact-input: #FFF8EB;
-  --nav-font: #222222;
   --font-color: #222222;
-  --nav-responsive-background: #e29300e6;
   --nav-background: #e29300e6;
-  --contact-card: #e29300;
+  --nav-font: #222222;
   --modal: #FFE2AD;
-  --link: #E96235;
-  --icons-hov: #CFA418;
-  --icons: #29290e;
+  --link: #d30000;
+  /* --icons-hov: #CFA418; */
+  --icons-hov: #1f1d19;
+  --icons: #1f1d19ad;
+  /* --icons: #29290e; */
+  --contact-input: #FFF8EB;
+  --contact-card: #e29300af;
   --contact-input-placeholder: #777777;
   --contact-button: #8f5d00;
 
@@ -19,8 +20,21 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0A0A0A;
+    --background: #080808;
     --font-color: #FFD6D6;
+    --nav-background: #000000ec;
+    --nav-font: #FFD6D6;
+    --modal: #0e1621;
+    --link: #35b3e9;
+    --icons: hsl(170, 51%, 50%);
+    --icons-hov: hsl(170, 51%, 80%);
+    --contact-card: hsl(225, 40%, 15%);
+    --contact-input: hsl(218, 50%, 90%);
+    --contact-button: #002d8f;
+    --contact-input-placeholder: #999999;
+
+    --gradient-left: #8E05C2;
+    --gradient-right: #FF0000;
   }
 }
 

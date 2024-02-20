@@ -1,6 +1,7 @@
 import commonStyles from '@/styles/commonStyles.module.css'
 import styles from './about.module.css'
 import { roboto400, redHat400 } from '@/fonts'
+import Image from 'next/image'
 
 function About() {
   return (
@@ -8,7 +9,13 @@ function About() {
       <h2 className={redHat400.className}>Acerca de mi</h2>
       <div className={styles.container}>
         <div className={styles.imageContainer}>
-          Imagen
+          <Image
+            src="/img/about-image.png"
+            alt="Ilustración de retrato personal."
+            width={600}
+            height={250}
+            className={styles.image}
+          />
         </div>
         <div className={styles.textContainer}>
           <p className={roboto400.className}>Tengo 28 años, soy de Santiago de Chile 🇨🇱. Llevo 5 años siendo padre y 2 años como desarrollador. Me gusta el cine, la música y el arte. Me apasiona la ciencia y la tecnología.</p>

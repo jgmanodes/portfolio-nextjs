@@ -47,12 +47,18 @@
     justify-content: center;
     align-items: center;
     font-size: 26px;
-    color: var(--background);
-    text-shadow: 0 0 2px var(--icons-hov);
     text-transform: uppercase;
     letter-spacing: 2px;
+    color: var(--background);
 }
-
+@media (prefers-color-scheme: dark) {
+    .container .cardsContainer .card .cardImg {
+        filter: brightness(40%);
+    }
+    .container .cardsContainer .card .cardTitle {
+        color: var(--font-color);
+    }
+}
 /* corte en 767px */
 @media (min-width: 767px) {
     .container p {
