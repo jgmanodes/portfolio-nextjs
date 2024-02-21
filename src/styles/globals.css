@@ -5,12 +5,10 @@
   --nav-font: #222222;
   --modal: #FFE2AD;
   --link: #d30000;
-  /* --icons-hov: #CFA418; */
   --icons-hov: #1f1d19;
   --icons: #1f1d19ad;
-  /* --icons: #29290e; */
   --contact-input: #FFF8EB;
-  --contact-card: #e29300af;
+  --contact-card: hsla(39, 100%, 44%, 0.2);
   --contact-input-placeholder: #777777;
   --contact-button: #8f5d00;
 
@@ -28,8 +26,8 @@
     --link: #35b3e9;
     --icons: hsl(170, 51%, 50%);
     --icons-hov: hsl(170, 51%, 80%);
-    --contact-card: hsl(225, 40%, 15%);
-    --contact-input: hsl(218, 50%, 90%);
+    --contact-card: hsla(225, 40%, 15%, 0.3);
+    --contact-input: hwb(218 78% 12% / 0.1);
     --contact-button: #002d8f;
     --contact-input-placeholder: #999999;
 
