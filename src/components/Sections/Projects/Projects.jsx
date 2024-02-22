@@ -6,7 +6,7 @@ import { redHat500, roboto300 } from '@/fonts'
 import Image from 'next/image'
 import Modal from '@/components/Modal/Modal'
 import { useState } from 'react'
-import { SiReact, SiNodedotjs, SiExpress, SiMysql, SiBootstrap, SiNextdotjs, SiHtml5, SiCss3 } from 'react-icons/si'
+import { SiReact, SiNodedotjs, SiExpress, SiMysql, SiBootstrap, SiNextdotjs, SiCss3, SiAdobeillustrator } from 'react-icons/si'
 
 function Projects() {
   const [isModalOpen, setModalOpen] = useState(false);
@@ -39,23 +39,13 @@ function Projects() {
     {
       title: 'Portafolio',
       url: 'https://jorgegonzalezdev.vercel.app/',
-      description: 'Ésta la primera versión de mi sitio web, un espacio dedicado a mis proyectos y experiencias en el ámbito de la programación. Desarrollado utilizando Next.js y estilizado con CSS puro, este portafolio refleja mi compromiso y habilidades en el mundo del desarrollo. Explora mis proyectos y descubre la esencia de mi trabajo en este espacio digital.',
+      description: 'Éste es mi sitio web, un espacio dedicado a mis proyectos y experiencias en el ámbito de la programación. Desarrollado utilizando Next.js y estilizado con CSS puro. Explora mis proyectos y descubre la esencia de mi trabajo en este espacio digital.',
       imageUrl: '/img/portafolio-page.png', 
       stack: [
         <SiReact key="1" />,
         <SiNextdotjs key="2"/>,
         <SiCss3 key="4"/>,
-      ],
-    },
-    {
-      title: 'Próximamente',
-      url: 'https://jorgegonzalezdev.vercel.app/',
-      description: 'Ésta la primera versión de mi sitio web, un espacio dedicado a mis proyectos y experiencias en el ámbito de la programación. Desarrollado utilizando Next.js y estilizado con CSS puro, este portafolio refleja mi compromiso y habilidades en el mundo del desarrollo. Explora mis proyectos y descubre la esencia de mi trabajo en este espacio digital.',
-      imageUrl: '/img/próximamente-page.png', 
-      stack: [
-        <SiReact key="1" />,
-        <SiNextdotjs key="2"/>,
-        <SiCss3 key="4"/>,
+        <SiAdobeillustrator key="5"/>,
       ],
     },
   ];

@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import { SiGithub, SiLinkedin, SiDribbble, SiSketchfab, SiArtstation } from 'react-icons/si'
+import { SiGithub, SiLinkedin, SiDribbble, SiSketchfab, SiArtstation, SiCodepen } from 'react-icons/si'
 import commonStyles from '@/styles/commonStyles.module.css'
 import styles from './contact.module.css'
 import { redHat300, redHat500, roboto300, roboto400 } from '@/fonts'
@@ -10,7 +10,6 @@ function Contact() {
       <h2 className={redHat500.className}>Contacto</h2>
       <div className={styles.container}>
 
-        {/* Display: none < 767px */}
         <div className={styles.textContent}>
           <h3 className={redHat300.className}>Mantente en contacto</h3>
           <div className={styles.text}>
@@ -77,6 +76,13 @@ function Contact() {
               rel="noopener noreferrer"
             >
               <SiArtstation />
+            </Link>
+            <Link
+              href="https://codepen.io/jorge-gonzalez-dev"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <SiCodepen />
             </Link>
           </div>
           <Link
